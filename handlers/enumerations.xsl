@@ -56,7 +56,7 @@
 				<xsl:value-of select="$type" />
 			</xsl:attribute>
 
-			<!-- add option to select no value in case of optional attribute -->
+			<!-- add option to select no value in case of no default or fixed value -->
 			<xsl:if test="$attribute = 'true' and not(@default) and not (@fixed)">
 				<xsl:element name="option">
 					<xsl:attribute name="value"/>
